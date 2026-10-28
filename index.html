@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Royale | Chicken, Seafood, Rice and Drinks</title>
+  <meta name="description" content="Grand Royale is a large family restaurant serving chicken, seafood, rice dishes and drinks.">
+
+  <!-- Fonts from Google Fonts (needs internet). If they fail, the fallback fonts are used. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ========== HEADER (uses Flexbox in the CSS) ========== -->
+  <header class="site-header">
+    <a class="logo" href="#home">Grand Royale</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <ul class="nav-list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#featured">Favourites</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#visit">Visit us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== SECTION 1: HERO ========== -->
+    <section class="hero" id="home">
+      <h1 class="hero-title">Grand Royale</h1>
+      <p class="hero-tagline">Chicken, seafood, rice and drinks, all under one roof.</p>
+      <div class="button-group">
+        <a class="button button-primary" href="#menu">View the menu</a>
+        <a class="button button-outline" href="#visit">Reserve a table</a>
+      </div>
+    </section>
+
+    <!-- ========== SECTION 2: FEATURED DISHES (Grid) ========== -->
+    <section class="section" id="featured">
+      <h2 class="section-title">Our guests' favourites</h2>
+      <p class="section-intro">Three dishes people order again and again.</p>
+
+      <div class="featured-grid">
+
+        <article class="card">
+          <!-- To use a real photo, replace this div with:
+               <img src="images/roast-chicken.jpg" alt="Golden roast chicken on a plate"> -->
+          <img src="images/roast-chicken.png" alt="Golden roast chicken on a plate">
+          <div class="card-body">
+            <h3 class="card-title">Royale Roast Chicken</h3>
+            <p>Slow-roasted with garlic, herbs and a golden glaze.</p>
+            <p class="card-price">$14</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/grilled-lobster.png" alt="Golden roast chicken on a plate">
+          <div class="card-body">
+            <h3 class="card-title">Grilled Lobster Tail</h3>
+            <p>Flame-grilled and finished with garlic butter.</p>
+            <p class="card-price">$28</p>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="images/saffron-jollof.png" alt="Golden roast chicken on a plate">
+          <div class="card-body">
+            <h3 class="card-title">Saffron Jollof Rice</h3>
+            <p>Fragrant rice cooked in a rich tomato and saffron sauce.</p>
+            <p class="card-price">$12</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== SECTION 3: MENU (Grid + Flexbox) ========== -->
+    <section class="section section-dark" id="menu">
+      <h2 class="section-title">The menu</h2>
+      <p class="section-intro">Four kinds of food, made fresh every day.</p>
+
+      <div class="menu-grid">
+
+        <article class="menu-category">
+          <h3 class="menu-heading">Chicken</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Royale Roast Chicken</span><span class="price">$14</span></li>
+            <li class="menu-item"><span>Crispy Fried Chicken</span><span class="price">$12</span></li>
+            <li class="menu-item"><span>Lemon Herb Grilled Chicken</span><span class="price">$13</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-category">
+          <h3 class="menu-heading">Seafood</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Grilled Lobster Tail</span><span class="price">$28</span></li>
+            <li class="menu-item"><span>Garlic Butter Prawns</span><span class="price">$22</span></li>
+            <li class="menu-item"><span>Pan-Seared Red Snapper</span><span class="price">$19</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-category">
+          <h3 class="menu-heading">Rice dishes</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Saffron Jollof Rice</span><span class="price">$12</span></li>
+            <li class="menu-item"><span>Chicken Fried Rice</span><span class="price">$11</span></li>
+            <li class="menu-item"><span>Seafood Paella</span><span class="price">$21</span></li>
+          </ul>
+        </article>
+
+        <article class="menu-category">
+          <h3 class="menu-heading">Drinks</h3>
+          <ul class="menu-list">
+            <li class="menu-item"><span>Fresh Mint Lemonade</span><span class="price">$4</span></li>
+            <li class="menu-item"><span>Hibiscus Iced Tea</span><span class="price">$4</span></li>
+            <li class="menu-item"><span>Mango Smoothie</span><span class="price">$6</span></li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== SECTION 4: VISIT US (Grid with named areas + Flexbox) ========== -->
+    <section class="section" id="visit">
+      <h2 class="section-title">Visit us</h2>
+      <p class="section-intro">Walk in any day, or reserve a table for a bigger group.</p>
+
+      <div class="visit-grid">
+
+        <div class="visit-box area-hours">
+          <h3>Opening hours</h3>
+          <dl class="hours-list">
+            <div class="hours-row"><dt>Monday to Thursday</dt><dd>11:00 - 22:00</dd></div>
+            <div class="hours-row"><dt>Friday and Saturday</dt><dd>11:00 - 23:30</dd></div>
+            <div class="hours-row"><dt>Sunday</dt><dd>12:00 - 21:00</dd></div>
+          </dl>
+        </div>
+
+        <div class="visit-box area-location">
+          <h3>Find us</h3>
+          <address>
+            Grand Royale<br>
+            12 Royal Avenue<br>
+            Banjul
+          </address>
+          <p>Free parking behind the building.</p>
+        </div>
+
+        <div class="visit-box area-reserve">
+          <h3>Reserve a table</h3>
+          <p>Planning a birthday, a family meal or a business lunch? Tell us the date and how many people are coming.</p>
+          <div class="button-group">
+            <a class="button button-primary" href="tel:+220 83 3732449">Call +220 83 3732449</a>
+            <a class="button button-outline-dark" href="mailto:bookings@grandroyale.example">Email us</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER (Flexbox) ========== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Grand Royale. All rights reserved.</p>
+    <p>Fonts: Cormorant Garamond and Outfit from Google Fonts. A student project.</p>
+  </footer>
+
+</body>
+</html>
